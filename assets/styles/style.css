@@ -5,6 +5,7 @@
 
 :root{
   --header: #2c3e50;
+  --jumbo: #1abc9c;
 }
 
 
@@ -28,6 +29,7 @@ a{
       UTILITIES
 *****************/
 
+/* HEADER */
 header{
   height: 90px;
   background-color: var(--header);
@@ -36,4 +38,14 @@ header{
 .burger i{
   border: 1px solid white;
   color: grey;
+}
+/* HEADER */
+
+.jumbo{
+  background-color: var(--jumbo);
+}
+
+img{
+  width: 200px;
+  height: 200px;
 }
