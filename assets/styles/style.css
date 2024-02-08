@@ -6,6 +6,7 @@
 :root{
   --header: #2c3e50;
   --jumbo: #1abc9c;
+  --social:#3a546d;
 }
 
 
@@ -16,6 +17,7 @@
 *****************/
 .container-custom{
   margin: 0 auto;
+  width: 70%;
 }
 
 li{ 
@@ -41,11 +43,27 @@ header{
 }
 /* HEADER */
 
+/* JUMBO */
 .jumbo{
   background-color: var(--jumbo);
 }
+/* /JUMBO */
 
-img{
-  width: 200px;
-  height: 200px;
+.card{
+  background-color: red;
+}
+
+/* ABOUT */
+.about{
+  background-color: var(--jumbo);
+}
+/* /ABOUT */
+
+
+.social{
+  background-color: var(--social);
+}
+
+footer{
+  background-color: var(--header);
 }
