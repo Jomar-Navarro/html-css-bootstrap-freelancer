@@ -1,7 +1,3 @@
-[class^= 'container'],
-[class^= 'col']{
-  border: 1px dashed black;
-}
 
 :root{
   --header: #2c3e50;
@@ -17,7 +13,7 @@
 *****************/
 .container-custom{
   margin: 0 auto;
-  width: 70%;
+  width: 65%;
 }
 
 li{ 
@@ -33,6 +29,8 @@ a{
 
 /* HEADER */
 header{
+  position: fixed;
+  width: 100%;
   height: 90px;
   background-color: var(--header);
 }
@@ -47,11 +45,43 @@ header{
 .jumbo{
   background-color: var(--jumbo);
 }
+
+.jumbo .image{
+  height: 250px;
+  width: 250px;
+}
+
+.jumbo h1{
+  font-size: 3.5rem;
+}
+
+.star{
+  font-size: 2rem;
+}
+
+.star i{
+  padding: 0 30px;
+}
+
+.star::before{
+  content: "―――";
+  font-size: 3rem;
+}
+
+.star::after{
+  content: "―――";
+  font-size: 3rem;
+}
 /* /JUMBO */
 
-.card{
-  background-color: red;
+/*  PORTFOLIO  */
+.portfolio h2,
+.about h2,
+.contact h2 {
+  font-size: 3.5rem;
 }
+
+/* /PORTFOLIO */
 
 /* ABOUT */
 .about{
@@ -59,11 +89,100 @@ header{
 }
 /* /ABOUT */
 
+/* CONTACT */
+.my_input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
 
+.my_btn{
+  background-color: #1abc9c;
+  border: none;
+}
+/* /CONTACT */
+
+/* SOCIALS */
 .social{
   background-color: var(--social);
 }
 
+.social i{
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social .col:nth-child(3) p:nth-child(2) span{
+  color: #1abc9c;
+}
+
+/* /SOCIALS */
+
+
+
 footer{
   background-color: var(--header);
+}
+
+
+
+.star{
+  position: relative;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.star:before{
+  content:" ";
+  height: 5px;
+  border-radius: 30px;
+  width: 130px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.star:after{
+  content:" ";
+  height: 5px;
+  border-radius: 30px;
+  width: 130px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.contact .star:before,
+.portfolio .star:before{
+  content:" ";
+  height: 5px;
+  border-radius: 30px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.contact .star:after,
+.portfolio .star:after{
+  content:" ";
+  height: 5px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10%;
 }
